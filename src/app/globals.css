@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-[#040500];
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.nav-btn{
+  @apply py-2 px-5 rounded-full hover:bg-gradient-to-tr hover:from-[#5e5e5e] hover:via-[#212020] hover:to-[#1c1c1c]
+}
+.nav-btn-active{
+    @apply py-2 px-5 text-[#ff014f] font-medium rounded-full hover:bg-gradient-to-tr hover:from-[#5e5e5e] hover:via-[#212020] hover:to-[#1c1c1c]
+}
+
+.menu{
+  @apply ml-auto text-white bg-[#ff014f] md:hidden w-14 h-14 rounded-full flex items-center justify-center
+}
+.dropdown{
+  @apply py-3 sm:py-5 border-y-[3px] border-[#040500] text-center text-xl font-medium transition ease-in-out bg-[#1c1c1c]  hover:bg-[#2a2a2a] text-white hover:cursor-pointer hover:text-[#ff014f]
+}
+
+.resume{
+  @apply hidden md:block font-medium text-white shadow-lg shadow-[#ff014d82] bg-[#ff014f] px-6 py-2 rounded-md
+}
+
+.abel-regular {
+  font-family: "Abel", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.abel-regular-thin{
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
