@@ -33,7 +33,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="border border-gray-600 rounded-[5px] shadow-lg shadow-zinc-700/40 px-5 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000]">
-          <div className="p-5 abel-regular-thin text-4xl text-[#ff014f] border-b border-gray-500">Frameworks, Runtime Environment Databases</div>
+          <div className="p-5 abel-regular-thin text-4xl text-[#ff014f] border-b border-gray-500">Frameworks, Runtime Environment and Databases</div>
           <div className="flex p-10 space-x-20">
             <ReactOriginal className="text-7xl" />
             <NextjsOriginal  className="text-7xl" />

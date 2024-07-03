@@ -12,14 +12,15 @@ const Home = () => {
               <div className="text-7xl abel-regular text-gray-400">
                 Hello, I'm <span className="text-7xl abel-regular py-5 text-[#ff014f]">Pranti Rani Banda</span>
               </div>
-              <div className="text-3xl abel-regular-thin pt-7 text-white pb-60">
+              <div className="text-3xl abel-regular-thin pt-7 text-white ">
                 I like coding and enjoy building websites. I have <br />a keen
                 interest in UI/UX design.
               </div>
             </div>
         </div>
       </div>
-      <ContactIcon/>
+      <ContactIcon />
+      <div className="pb-60"></div>
     </div>
   )
 }

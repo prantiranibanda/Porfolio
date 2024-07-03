@@ -9,7 +9,7 @@ const Navbar = () => {
         setIsExpanded(!isExpanded);
     }
   return (
-    <div className="sticky top-0">
+    <div className="sticky h-20 bg-black top-0">
             {/* Navbar */}
             <div className={`flex px-5 py-5 sm:px-10 lg:px-20 items-center`}>
                 <div className='font-bold text-[#ff014f] text-2xl sm:text-3xl'><Link href="/">PRB</Link></div>
