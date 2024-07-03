@@ -1,4 +1,6 @@
 import React from 'react'
+import ContactIcon from './ContactIcon'
+
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
             </div>
         </div>
       </div>
+      <ContactIcon/>
     </div>
   )
 }

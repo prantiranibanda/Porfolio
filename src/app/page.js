@@ -9,8 +9,8 @@ export default function App() {
     <div>
       <Home />
       <About />
-      <Projects />
       <Skills/>
+      <Projects />
     </div>
   );
 }

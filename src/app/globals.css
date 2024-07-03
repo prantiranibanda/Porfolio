@@ -21,7 +21,11 @@ body {
 }
 
 .resume{
-  @apply hidden md:block font-medium text-white shadow-lg shadow-[#ff014d82] bg-[#ff014f] px-6 py-2 rounded-md
+  @apply hidden md:block font-medium text-white shadow-[#ff014d82] bg-[#ff014f] px-6 py-2 rounded-md
+}
+
+.heading{
+  @apply text-white text-center abel-regular bg-gradient-to-r from-[#0c0c0c] via-[#212020] to-[#0c0c0c] py-7 text-8xl mb-16
 }
 
 .abel-regular {
