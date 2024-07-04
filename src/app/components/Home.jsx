@@ -10,7 +10,7 @@ const Home = () => {
         <div className="md:flex w-full">          
             <div className="px-14">
               <div className="text-7xl abel-regular text-gray-400">
-                Hello, I'm <span className="text-7xl abel-regular py-5 text-[#ff014f]">Pranti Rani Banda</span>
+                Hello, I&#39;m <span className="text-7xl abel-regular py-5 text-[#ff014f]">Pranti Rani Banda</span>
               </div>
               <div className="text-3xl abel-regular-thin pt-7 text-white ">
                 I like coding and enjoy building websites. I have <br />a keen

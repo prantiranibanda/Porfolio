@@ -28,6 +28,9 @@ body {
   @apply text-white text-center abel-regular bg-gradient-to-r from-[#0c0c0c] via-[#212020] to-[#0c0c0c] py-7 text-8xl mb-16
 }
 
+.skills-card{
+  @apply flex justify-end absolute pt-10 abel-regular-thin text-lg text-[#ff014f] border-b border-[#ff014f] w-72
+}
 .abel-regular {
   font-family: "Abel", sans-serif;
   font-weight: 600;
