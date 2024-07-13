@@ -3,41 +3,41 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#040500];
+	@apply bg-[#040500];
 }
 
-.nav-btn{
-  @apply py-2 px-5 rounded-full hover:bg-gradient-to-tr hover:from-[#5e5e5e] hover:via-[#212020] hover:to-[#1c1c1c]
+.nav-btn {
+	@apply rounded-full px-5 py-2 hover:bg-gradient-to-tr hover:from-[#5e5e5e] hover:via-[#212020] hover:to-[#1c1c1c];
 }
-.nav-btn-active{
-    @apply py-2 px-5 text-[#ff014f] font-medium rounded-full hover:bg-gradient-to-tr hover:from-[#5e5e5e] hover:via-[#212020] hover:to-[#1c1c1c]
-}
-
-.menu{
-  @apply ml-auto text-white bg-[#ff014f] md:hidden w-14 h-14 rounded-full flex items-center justify-center
-}
-.dropdown{
-  @apply py-3 sm:py-5 border-y-[3px] border-[#040500] text-center text-xl font-medium transition ease-in-out bg-[#1c1c1c]  hover:bg-[#2a2a2a] text-white hover:cursor-pointer hover:text-[#ff014f]
+.nav-btn-active {
+	@apply rounded-full px-5 py-2 font-medium text-[#ff014f] hover:bg-gradient-to-tr hover:from-[#5e5e5e] hover:via-[#212020] hover:to-[#1c1c1c];
 }
 
-.resume{
-  @apply hidden md:block font-medium text-white shadow-[#ff014d82] bg-[#ff014f] px-6 py-2 rounded-md
+.menu {
+	@apply ml-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#ff014f] text-white md:hidden;
+}
+.dropdown {
+	@apply border-y-[3px] border-[#040500] bg-[#1c1c1c] py-3 text-center text-xl font-medium text-white transition ease-in-out hover:cursor-pointer hover:bg-[#2a2a2a] hover:text-[#ff014f] sm:py-5;
 }
 
-.heading{
-  @apply text-white text-center abel-regular bg-gradient-to-r from-[#0c0c0c] via-[#212020] to-[#0c0c0c] py-7 text-8xl mb-16
+.resume {
+	@apply hidden rounded-md bg-[#ff014f] px-6 py-2 font-medium text-white shadow-[#ff014d82] md:block;
 }
 
-.skills-card{
-  @apply flex justify-end absolute pt-10 abel-regular-thin text-lg text-[#ff014f] border-b border-[#ff014f] w-72
+.heading {
+	@apply abel-regular mb-16 bg-gradient-to-r from-[#0c0c0c] via-[#212020] to-[#0c0c0c] py-7 text-center text-8xl text-white;
+}
+
+.skills-card {
+	@apply abel-regular-thin absolute flex w-72 justify-end border-b border-[#ff014f] pt-10 text-lg text-[#ff014f];
 }
 .abel-regular {
-  font-family: "Abel", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+	font-family: "Abel", sans-serif;
+	font-weight: 600;
+	font-style: normal;
 }
-.abel-regular-thin{
-  font-family: "Abel", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.abel-regular-thin {
+	font-family: "Abel", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }

@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const ContactIcon = () => {
-  return (
-    <div className="text-white px-14 py-8 space-x-8">
-      <i className="inline-block hover:animate-bounce hover:text-[#ff014f] text-red-300 hover:cursor-pointer devicon-linkedin-plain text-2xl"></i>
-      <i className="inline-block hover:animate-bounce hover:text-[#ff014f] text-red-300 hover:cursor-pointer fi fi-brands-instagram text-2xl"></i>
-      <i className="inline-block hover:animate-bounce hover:text-[#ff014f] text-red-300 hover:cursor-pointer fi fi-brands-github text-2xl"></i>
-      <i className="inline-block hover:animate-bounce hover:text-[#ff014f] text-red-300 hover:cursor-pointer fi fi-brands-facebook text-2xl"></i>
-      <i className="inline-block hover:animate-bounce hover:text-[#ff014f] text-red-300 hover:cursor-pointer fi fi-brands-twitter-alt text-2xl"></i>
-    </div>
-  )
-}
+	return (
+		<div className="space-x-8 px-14 py-8 text-white">
+			<i className="fi fi-brands-linkedin inline-block text-2xl text-red-300 hover:animate-bounce hover:cursor-pointer hover:text-[#ff014f]"></i>
+			<i className="fi fi-brands-instagram inline-block text-2xl text-red-300 hover:animate-bounce hover:cursor-pointer hover:text-[#ff014f]"></i>
+			<i className="fi fi-brands-github inline-block text-2xl text-red-300 hover:animate-bounce hover:cursor-pointer hover:text-[#ff014f]"></i>
+			<i className="fi fi-brands-facebook inline-block text-2xl text-red-300 hover:animate-bounce hover:cursor-pointer hover:text-[#ff014f]"></i>
+			<i className="fi fi-brands-twitter-alt inline-block text-2xl text-red-300 hover:animate-bounce hover:cursor-pointer hover:text-[#ff014f]"></i>
+		</div>
+	);
+};
 
-export default ContactIcon
+export default ContactIcon;
