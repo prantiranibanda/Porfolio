@@ -1,8 +1,8 @@
 "use client";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
-import Skill from "./components/Skill";
 import Skills from "./components/Skills";
 
 export default function App() {
@@ -10,9 +10,9 @@ export default function App() {
 		<div>
 			<Home />
 			<About />
-			{/* <Skills /> */}
-			<Projects />
-			<Skill />
+			<Skills />
+			{/* <Projects /> */}
+			<Contact/>
 		</div>
 	);
 }
