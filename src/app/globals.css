@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply bg-[#040500];
+	@apply bg-[#030303];
 }
 
 .nav-btn {
@@ -38,6 +38,11 @@ body {
 }
 .abel-regular-thin {
 	font-family: "Abel", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.great-vibes-regular {
+	font-family: "Great Vibes", cursive;
 	font-weight: 400;
 	font-style: normal;
 }

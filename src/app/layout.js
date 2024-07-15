@@ -26,12 +26,23 @@ export default function RootLayout({ children }) {
 				/>
 				<link
 					rel="stylesheet"
+					href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+				/>
+				<link
+					rel="stylesheet"
 					type="text/css"
 					href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
 				/>
 				<link
 					rel="stylesheet"
 					href="https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css"
+				></link>
+
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+					rel="stylesheet"
 				></link>
 			</head>
 			<body className={inter.className}>
