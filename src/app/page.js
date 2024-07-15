@@ -13,7 +13,7 @@ export default function App() {
 			<Home />
 			<About />
 			<Skills />
-			{/* <Projects /> */}
+			<Projects />
 			<Contact />
 			<Footer />
 			<Copyright />

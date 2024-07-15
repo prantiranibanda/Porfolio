@@ -14,7 +14,7 @@ const Home = () => {
 					<div className="w-full md:flex">
 						<div className="">
 							<div className="abel-regular text-7xl text-gray-400">
-								Hello, I&#39;m
+								Hello, I&#39;m&#160;
 								<span className="abel-regular py-5 text-7xl text-[#ff014f]">
 									Pranti Rani Banda
 								</span>
@@ -29,14 +29,14 @@ const Home = () => {
 				<ContactIcon />
 				<div className="pb-60"></div>
 			</div>
-			<div className=" pb-20">
-				<div className="border-8 border-[#ff014f] rounded-full">
+			<div className="pb-20">
+				<div className="rounded-3xl border-8 border-[#ff014f]">
 					<Image
 						src={MyPhoto}
 						alt="my photo"
 						height={400}
-						width={400}
-						className="sticky z-10 rounded-full border-8 border-black bg-gradient-to-bl from-black via-zinc-900 to-zinc-600"
+						width={350}
+						className="sticky rounded-3xl border-8 border-black bg-gradient-to-bl from-black via-zinc-900 to-zinc-600"
 					/>
 				</div>
 			</div>
