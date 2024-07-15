@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Home = () => {
 	return (
-		<div className="flex items-center justify-between px-24">
+		<div className="flex space-x-20 items-center px-24">
 			<div className="">
 				<div className="abel-regular pb-10 pt-40 text-8xl text-zinc-700">
 					Welcome to my world!
@@ -30,13 +30,13 @@ const Home = () => {
 				<div className="pb-60"></div>
 			</div>
 			<div className="pb-20">
-				<div className="rounded-3xl border-8 border-[#ff014f]">
+				<div className="rounded-full border-4 border-[#ff014f]">
 					<Image
 						src={MyPhoto}
 						alt="my photo"
 						height={400}
 						width={350}
-						className="sticky rounded-3xl border-8 border-black bg-gradient-to-bl from-black via-zinc-900 to-zinc-600"
+						className="sticky rounded-full border-8 border-black bg-gradient-to-bl from-black via-zinc-900 to-zinc-600"
 					/>
 				</div>
 			</div>
