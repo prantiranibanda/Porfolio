@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="abel-regular-thin h-54 flex items-center justify-between space-x-2 bg-zinc-900 px-40 py-14 text-xl text-zinc-400">
+		<div className="abel-regular-thin h-54 flex items-center justify-between space-x-2 bg-zinc-900 px-40 py-10 mt-24 text-xl text-zinc-400">
 			<div className="w-80 space-y-3 px-16 py-2">
 				<div className="flex space-x-4">
 					<span className="material-symbols-outlined text-[#ff014f]">call</span>

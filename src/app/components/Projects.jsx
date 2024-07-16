@@ -6,8 +6,8 @@ import Note from "@/../public/note.png";
 const Projects = () => {
 	return (
 		<div id="projects">
-			<div className="heading">Projects</div>
-			<div className="space-y-16 px-52 pt-16 text-white">
+			<div className="heading mt-44 mb-16">Projects</div>
+			<div className="space-y-16 px-52 text-white">
 				<div className="flex space-x-10 bg-zinc-800 p-8">
 					<Image
 						src={JJ}

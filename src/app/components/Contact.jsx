@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Contact() {
 	return (
-		<div id="contact" className="pb-52">
-			<div className="heading mt-40">Contact</div>
-			<div className="flex items-center justify-center">
-				<div className="grid grid-cols-2 gap-10 px-80">
+		<div id="contact">
+			<div className="heading mb-16 mt-44">Contact Me</div>
+			<div className="flex items-center justify-center px-80">
+				<div className="grid grid-cols-2 gap-10 border border-zinc-400">
 					<div className="space-y-4 p-10">
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f]">
+							<div className="abel-regular-thin py-1 text-2xl text-[#ff014f]">
 								Your Name :
 							</div>
 							<input
@@ -18,7 +18,7 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f]">
+							<div className="abel-regular-thin py-1 text-2xl text-[#ff014f]">
 								Email Address :
 							</div>
 							<input
@@ -28,7 +28,7 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f]">
+							<div className="abel-regular-thin py-1 text-2xl text-[#ff014f]">
 								Mobile No :
 							</div>
 							<input
@@ -41,7 +41,7 @@ export default function Contact() {
 
 					<div className="flex flex-col justify-between p-10 text-white">
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f]">
+							<div className="abel-regular-thin py-1 text-2xl text-[#ff014f]">
 								Message :
 							</div>
 							<textarea
@@ -50,7 +50,7 @@ export default function Contact() {
 								type="text"
 							/>
 						</div>
-						<button className="abel-regular-thin w-fit rounded-md bg-[#ff014f] px-8 py-2 text-xl text-white">
+						<button className="abel-regular-thin w-fit rounded-md bg-[#ff014f] px-8 py-2 text-2xl text-white">
 							Send Me
 						</button>
 					</div>
