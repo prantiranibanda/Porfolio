@@ -20,8 +20,8 @@ import ReactQueryLogo from "@/../public/reactquery.png";
 
 const Skills = () => {
 	return (
-		<div>
-			<div className="heading">Skills</div>
+		<div id="skills">
+			<div className="heading">My Technical Skills</div>
 			<div className="space-y-10 px-72 py-10">
 				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-5 shadow-lg shadow-zinc-700/40">
 					<div className="abel-regular-thin border-b border-gray-500 p-5 text-3xl text-[#ff014f]">

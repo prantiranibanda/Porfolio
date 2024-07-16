@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-	const [active, setActive] = useState("l1");
+	const [active, setActive] = useState("#home");
 	const [isExpanded, setIsExpanded] = useState(false);
 	const toggleExpand = () => {
 		setIsExpanded(!isExpanded);
 	};
 	return (
-		<div className="sticky top-0 h-20 bg-[#030303]">
+		<div className="sticky top-0 h-20 border-b border-zinc-800 bg-[#030303]">
 			{/* Navbar */}
 			<div className={`flex items-center px-5 py-5 sm:px-10 lg:px-20`}>
 				<div className="text-2xl font-bold text-[#ff014f] sm:text-3xl">
@@ -20,46 +20,46 @@ const Navbar = () => {
 						{isExpanded ? "expand_more" : "menu"}
 					</span>
 				</div>
-				<div className="mx-auto ml-auto hidden space-x-1 font-thin text-white md:flex md:space-x-2">
+				<div className="mx-auto ml-auto hidden space-x-1 font-light text-white md:flex md:space-x-2">
 					<div
-						className={active === "l1" ? "nav-btn-active" : "nav-btn"}
+						className={active === "#home" ? "nav-btn-active" : "nav-btn"}
 						onClick={() => {
-							setActive("l1");
+							setActive("#home");
 						}}
 					>
-						<Link href="/">Home</Link>
+						<Link href="#home">Home</Link>
 					</div>
 					<div
-						className={active === "l2" ? "nav-btn-active" : "nav-btn"}
+						className={active === "#about" ? "nav-btn-active" : "nav-btn"}
 						onClick={() => {
-							setActive("l2");
+							setActive("#about");
 						}}
 					>
-						<Link href="/about">About</Link>
+						<Link href="#about">About</Link>
 					</div>
 					<div
-						className={active === "l3" ? "nav-btn-active" : "nav-btn"}
+						className={active === "#skills" ? "nav-btn-active" : "nav-btn"}
 						onClick={() => {
-							setActive("l3");
+							setActive("#skills");
 						}}
 					>
-						<Link href="/skills">Skills</Link>
+						<Link href="#skills">Skills</Link>
 					</div>
 					<div
-						className={active === "l4" ? "nav-btn-active" : "nav-btn"}
+						className={active === "#projects" ? "nav-btn-active" : "nav-btn"}
 						onClick={() => {
-							setActive("l4");
+							setActive("#projects");
 						}}
 					>
-						<Link href="/contact">Projects</Link>
+						<Link href="#projects">Projects</Link>
 					</div>
 					<div
-						className={active === "l5" ? "nav-btn-active" : "nav-btn"}
+						className={active === "#contact" ? "nav-btn-active" : "nav-btn"}
 						onClick={() => {
-							setActive("l5");
+							setActive("#contact");
 						}}
 					>
-						<Link href="/contact">Contact</Link>
+						<Link href="#contact">Contact</Link>
 					</div>
 				</div>
 				<div className="resume">

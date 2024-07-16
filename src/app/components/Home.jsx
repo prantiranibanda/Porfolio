@@ -1,13 +1,16 @@
 import React from "react";
 import ContactIcon from "./ContactIcon";
-import MyPhoto from "@/../public/myphoto.png"
+import MyPhoto from "@/../public/myphoto.png";
 import Image from "next/image";
 
 const Home = () => {
 	return (
-		<div className="flex space-x-20 items-center px-24">
-			<div className="">
-				<div className="abel-regular pb-10 pt-40 text-8xl text-zinc-700">
+		<div
+			id="home"
+			className="flex h-[calc(100vh-5rem)] items-center space-x-20 px-24"
+		>
+			<div className="flex flex-col">
+				<div className="abel-regular pb-10 text-8xl text-zinc-700">
 					Welcome to my world!
 				</div>
 				<div className="flex items-center md:flex">
@@ -27,16 +30,15 @@ const Home = () => {
 					</div>
 				</div>
 				<ContactIcon />
-				<div className="pb-60"></div>
 			</div>
-			<div className="pb-20">
+			<div className="flex items-center">
 				<div className="rounded-full border-4 border-[#ff014f]">
 					<Image
 						src={MyPhoto}
 						alt="my photo"
-						height={400}
-						width={350}
-						className="sticky rounded-full border-8 border-black bg-gradient-to-bl from-black via-zinc-900 to-zinc-600"
+						height={500}
+						width={420}
+						className="rounded-full border-8 border-black bg-gradient-to-bl from-black via-zinc-900 to-zinc-600"
 					/>
 				</div>
 			</div>

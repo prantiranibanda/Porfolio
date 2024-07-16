@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="abel-regular-thin h-54 flex items-center justify-between space-x-2 bg-zinc-900 px-40 py-14 text-xl text-white">
+		<div className="abel-regular-thin h-54 flex items-center justify-between space-x-2 bg-zinc-900 px-40 py-14 text-xl text-zinc-400">
 			<div className="w-80 space-y-3 px-16 py-2">
 				<div className="flex space-x-4">
-					<span class="material-symbols-outlined text-[#ff014f]">call</span>
+					<span className="material-symbols-outlined text-[#ff014f]">call</span>
 					<div>+91-7439455739</div>
 				</div>
 				<div className="flex space-x-4">
-					<span class="material-symbols-outlined text-[#ff014f]">mail</span>
+					<span className="material-symbols-outlined text-[#ff014f]">mail</span>
 					<div>prantibanda@gmail.com</div>
 				</div>
 				<div className="flex space-x-4">
@@ -19,7 +19,7 @@ export default function Footer() {
 			</div>
 			<div className="flex w-80 flex-col items-center">
 				<div className="text-[#ff014f]">
-					<span class="material-symbols-outlined">home_pin</span>
+					<span className="material-symbols-outlined">home_pin</span>
 				</div>
 				<div className="px-3 text-center">
 					Manirupa Appt, Harmozvilla, Sodepur Road, Madhyamgram, PIN-700129,
