@@ -25,7 +25,7 @@ body {
 }
 
 .heading {
-	@apply abel-regular pb-3 flex justify-center text-8xl text-zinc-300;
+	@apply abel-regular pt-24 flex justify-center text-8xl text-zinc-300;
 }
 
 .skills-card {

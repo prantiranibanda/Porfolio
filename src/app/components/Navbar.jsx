@@ -1,17 +1,36 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { animate } from "framer-motion";
 
 const Navbar = () => {
 	const [active, setActive] = useState("#home");
 	const [isExpanded, setIsExpanded] = useState(false);
+	const [isHidden, setIsHidden] = useState(false);
+
 	const toggleExpand = () => {
 		setIsExpanded(!isExpanded);
 	};
+
+	const { scrollY } = useScroll();
+	useMotionValueEvent(scrollY, "change", latest => {
+		const previous = scrollY.getPrevious();
+		if (previous < latest && latest > 150) setIsHidden(true);
+		else setIsHidden(false);
+	});
 	return (
-		<div className="sticky top-0 h-20 border-b border-zinc-800 bg-[#030303]">
+		<motion.div
+			variants={{
+				visible: { y: 0 },
+				hidden: { y: "-100%" },
+			}}
+			animate={isHidden ? "hidden" : "visible"}
+			transition={{ duration: 0.45, ease: "easeInOut" }}
+			className="sticky top-0 border-b border-zinc-800 bg-[#030303]"
+		>
 			{/* Navbar */}
-			<div className={`flex items-center px-5 py-5 sm:px-10 lg:px-20`}>
+			<motion.div className={`flex items-center px-5 py-4 sm:px-10 lg:px-20`}>
 				<div className="text-2xl font-bold text-[#ff014f] sm:text-3xl">
 					<Link href="/">PRB</Link>
 				</div>
@@ -21,53 +40,66 @@ const Navbar = () => {
 					</span>
 				</div>
 				<div className="mx-auto ml-auto hidden space-x-1 font-light text-white md:flex md:space-x-2">
-					<div
-						className={active === "#home" ? "nav-btn-active" : "nav-btn"}
+					<Link
 						onClick={() => {
 							setActive("#home");
 						}}
+						href="#home"
+						className={active === "#home" ? "nav-btn-active" : "nav-btn"}
 					>
-						<Link href="#home">Home</Link>
-					</div>
-					<div
-						className={active === "#about" ? "nav-btn-active" : "nav-btn"}
+						Home
+					</Link>
+
+					<Link
 						onClick={() => {
 							setActive("#about");
 						}}
+						href="#about"
+						className={active === "#about" ? "nav-btn-active" : "nav-btn"}
 					>
-						<Link href="#about">About</Link>
-					</div>
-					<div
-						className={active === "#skills" ? "nav-btn-active" : "nav-btn"}
+						About
+					</Link>
+
+					<Link
 						onClick={() => {
 							setActive("#skills");
 						}}
+						href="#skills"
+						className={active === "#skills" ? "nav-btn-active" : "nav-btn"}
 					>
-						<Link href="#skills">Skills</Link>
-					</div>
-					<div
-						className={active === "#projects" ? "nav-btn-active" : "nav-btn"}
+						Skills
+					</Link>
+
+					<Link
 						onClick={() => {
 							setActive("#projects");
 						}}
+						href="#projects"
+						className={active === "#projects" ? "nav-btn-active" : "nav-btn"}
 					>
-						<Link href="#projects">Projects</Link>
-					</div>
-					<div
-						className={active === "#contact" ? "nav-btn-active" : "nav-btn"}
+						Projects
+					</Link>
+
+					<Link
 						onClick={() => {
 							setActive("#contact");
 						}}
+						href="#contact"
+						className={active === "#contact" ? "nav-btn-active" : "nav-btn"}
 					>
-						<Link href="#contact">Contact</Link>
-					</div>
+						Contact
+					</Link>
 				</div>
-				<div className="resume">
-					<Link href="/resume">Resume</Link>
-				</div>
-			</div>
+
+				<Link
+					href="https://flowcv.com/resume/0v3ha21gv8"
+					className="resume abel-regular-thin text-xl"
+				>
+					Resume
+				</Link>
+			</motion.div>
 			{/* Menu */}
-			<div
+			{/* <div
 				className={`fixed w-full bg-slate-300 ${isExpanded ? "block" : "hidden"} opacity-95 md:hidden`}
 			>
 				<Link href="/">
@@ -82,8 +114,8 @@ const Navbar = () => {
 				<Link href="/contact">
 					<div className="dropdown">Contact</div>
 				</Link>
-			</div>
-		</div>
+			</div> */}
+		</motion.div>
 	);
 };
 

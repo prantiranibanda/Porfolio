@@ -7,7 +7,7 @@ const Home = () => {
 	return (
 		<div
 			id="home"
-			className="flex h-[calc(100vh-5rem)] items-center space-x-20 px-24"
+			className="flex h-[calc(100vh-4.75rem)] items-center space-x-20 px-24"
 		>
 			<div className="flex flex-col">
 				<div className="abel-regular pb-10 text-8xl text-zinc-700">
