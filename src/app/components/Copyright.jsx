@@ -10,7 +10,7 @@ export default function Copyright() {
 				copyright &#169; made with &#9829;
 			</div>
 			<div>
-				<a href="https://github.com/prantiranibanda/pranti" target="_blank">
+				<a href="https://github.com/prantiranibanda/Portfolio" target="_blank">
 					<i className="fi fi-brands-github text-2xl text-zinc-700"></i>
 				</a>
 			</div>
