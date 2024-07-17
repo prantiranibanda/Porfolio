@@ -1,8 +1,14 @@
 import React from "react";
-
-const About = () => {
+import { motion } from "framer-motion";
+const About = ({ setActive }) => {
 	return (
-		<div id="about" className="space-y-20">
+		<motion.div
+			onViewportEnter={() => {
+				setActive("#about");
+			}}
+			id="about"
+			className="space-y-20"
+		>
 			<div className="heading">About Me</div>
 			<div className="abel-regular-thin flex space-x-14 px-40 text-justify text-2xl text-white">
 				<div className="w-1/2">
@@ -16,10 +22,7 @@ const About = () => {
 					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-3xl text-gray-400">
 						Databases:
 					</div>
-					<div className="pb-5 pt-2 text-red-300">
-						{" "}
-						SQL, MySQL, MongoDB
-					</div>
+					<div className="pb-5 pt-2 text-red-300"> SQL, MySQL, MongoDB</div>
 					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-3xl text-gray-400">
 						Frameworks:
 					</div>
@@ -53,7 +56,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

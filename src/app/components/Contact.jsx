@@ -1,8 +1,13 @@
 import React from "react";
-
-export default function Contact() {
+import { motion } from "framer-motion";
+export default function Contact({ setActive }) {
 	return (
-		<div id="contact">
+		<motion.div
+			onViewportEnter={() => {
+				setActive("#contact");
+			}}
+			id="contact"
+		>
 			<div className="heading mb-16 mt-44">Contact Me</div>
 			<div className="flex items-center justify-center px-80">
 				<div className="grid grid-cols-2 gap-10 border border-zinc-400">
@@ -56,6 +61,6 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

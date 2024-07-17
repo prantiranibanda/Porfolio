@@ -2,11 +2,17 @@ import Image from "next/image";
 import React from "react";
 import JJ from "@/../public/jj.png";
 import Note from "@/../public/note.png";
+import { motion } from "framer-motion";
 
-const Projects = () => {
+const Projects = ({ setActive }) => {
 	return (
-		<div id="projects">
-			<div className="heading mt-44 mb-16">Projects</div>
+		<motion.div
+			onViewportEnter={() => {
+				setActive("#projects");
+			}}
+			id="projects"
+		>
+			<div className="heading mb-16 mt-44">Projects</div>
 			<div className="space-y-16 px-52 text-white">
 				<div className="flex space-x-10 bg-zinc-800 p-8">
 					<Image
@@ -131,7 +137,7 @@ const Projects = () => {
 					/>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

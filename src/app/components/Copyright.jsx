@@ -6,7 +6,7 @@ export default function Copyright() {
 			<div className="yellowtail-regular text-xl text-white">
 				Pranti Rani Banda
 			</div>
-			<div className="text-zinc-700 pr-24">
+			<div className="pr-24 text-zinc-700">
 				copyright &#169; made with &#9829;
 			</div>
 			<div>

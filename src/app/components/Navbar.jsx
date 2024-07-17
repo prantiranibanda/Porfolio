@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
-const Navbar = () => {
-	const [active, setActive] = useState(0);
+const Navbar = ({ setActive, active }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -14,19 +13,14 @@ const Navbar = () => {
 
 	const { scrollY } = useScroll();
 	useMotionValueEvent(scrollY, "change", latest => {
-		console.log(latest)
+		console.log(latest);
 		const previous = scrollY.getPrevious();
 		if (previous < latest && latest > 150) setIsHidden(true);
 		else setIsHidden(false);
-
-		if (latest <= 768) setActive("#home");
-		else if (latest<=1896) setActive("#about");
-		else if (latest<=3120) setActive("#skills");
-		else if(latest<=4596) setActive("#projects");
-		else setActive("#contact");
-	})
+	});
 	return (
 		<motion.div
+			id="#home"
 			variants={{
 				visible: { y: 0 },
 				hidden: { y: "-100%" },
@@ -47,6 +41,9 @@ const Navbar = () => {
 				</div>
 				<div className="mx-auto ml-auto hidden space-x-1 font-light text-white md:flex md:space-x-2">
 					<Link
+						onClick={() => {
+							setActive("#home");
+						}}
 						href="#home"
 						className={active === "#home" ? "nav-btn-active" : "nav-btn"}
 					>
@@ -54,6 +51,9 @@ const Navbar = () => {
 					</Link>
 
 					<Link
+						onClick={() => {
+							setActive("#about");
+						}}
 						href="#about"
 						className={active === "#about" ? "nav-btn-active" : "nav-btn"}
 					>
@@ -61,6 +61,9 @@ const Navbar = () => {
 					</Link>
 
 					<Link
+						onClick={() => {
+							setActive("#skills");
+						}}
 						href="#skills"
 						className={active === "#skills" ? "nav-btn-active" : "nav-btn"}
 					>
@@ -68,6 +71,9 @@ const Navbar = () => {
 					</Link>
 
 					<Link
+						onClick={() => {
+							setActive("#projects");
+						}}
 						href="#projects"
 						className={active === "#projects" ? "nav-btn-active" : "nav-btn"}
 					>
@@ -75,6 +81,9 @@ const Navbar = () => {
 					</Link>
 
 					<Link
+						onClick={() => {
+							setActive("#contact");
+						}}
 						href="#contact"
 						className={active === "#contact" ? "nav-btn-active" : "nav-btn"}
 					>

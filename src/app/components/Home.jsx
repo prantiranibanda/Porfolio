@@ -2,11 +2,14 @@ import React from "react";
 import ContactIcon from "./ContactIcon";
 import MyPhoto from "@/../public/myphoto.png";
 import Image from "next/image";
-
-const Home = () => {
+import { motion } from "framer-motion";
+const Home = ({ setActive }) => {
 	return (
-		<div
-			id="home"
+		<motion.div
+			onViewportEnter={() => {
+				setActive("#home");
+			}}
+			// id="home"
 			className="flex h-[calc(100vh-4.75rem)] items-center space-x-20 px-24"
 		>
 			<div className="flex flex-col">
@@ -42,7 +45,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
