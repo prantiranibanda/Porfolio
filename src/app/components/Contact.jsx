@@ -1,6 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
 export default function Contact({ setActive }) {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [phone, setPhone] = useState("");
+	const [mssg, setMssg] = useState("");
+
 	return (
 		<motion.div
 			onViewportEnter={() => {
@@ -20,6 +28,8 @@ export default function Contact({ setActive }) {
 								className="rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:mb-0 sm:w-72 md:w-80"
 								placeholder="name"
 								type="text"
+								value={name}
+								onChange={e => setName(e.target.value)}
 							/>
 						</div>
 						<div>
@@ -30,6 +40,8 @@ export default function Contact({ setActive }) {
 								className="rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:mb-0 sm:w-72 md:w-80"
 								placeholder="email"
 								type="text"
+								value={email}
+								onChange={e => setEmail(e.target.value)}
 							/>
 						</div>
 						<div>
@@ -40,6 +52,8 @@ export default function Contact({ setActive }) {
 								className="rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:mb-0 sm:w-72 md:w-80"
 								placeholder="mobile no"
 								type="text"
+								value={phone}
+								onChange={e => setPhone(e.target.value)}
 							/>
 						</div>
 					</div>
@@ -53,9 +67,26 @@ export default function Contact({ setActive }) {
 								className="h-40 w-[20rem] rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white"
 								placeholder="message me..."
 								type="text"
+								value={mssg}
+								onChange={e => setMssg(e.target.value)}
 							/>
 						</div>
-						<button className="abel-regular-thin w-fit rounded-md bg-[#ff014f] px-8 py-2 text-2xl text-white">
+						<button
+							onClick={async () => {
+								emailjs.init("cfjgvwMEtOKjzUCS_");
+								const resp = await emailjs.send(
+									"service_325cdow",
+									"portfolio_template",
+									{ name, email, phone, message: mssg },
+								);
+								console.log(resp);
+								setEmail("");
+								setMssg("");
+								setName("");
+								setPhone("");
+							}}
+							className="abel-regular-thin w-fit rounded-md bg-[#ff014f] px-8 py-2 text-2xl text-white"
+						>
 							Send Me
 						</button>
 					</div>
