@@ -10,32 +10,32 @@ const About = ({ setActive }) => {
 			className="space-y-20"
 		>
 			<div className="heading">About Me</div>
-			<div className="abel-regular-thin flex space-x-14 px-40 text-justify text-2xl text-white">
-				<div className="w-1/2">
-					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-3xl text-gray-400">
+			<div className="abel-regular-thin flex flex-col space-y-10 px-5 text-justify text-lg text-white sm:px-10 md:flex-row md:space-x-14 md:space-y-0 md:px-20 lg:px-40 lg:text-2xl">
+				<div className="w-full md:w-1/2">
+					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-2xl text-gray-400 md:text-3xl">
 						Languages:
 					</div>
 					<div className="pb-5 pt-2 text-red-300">
 						{" "}
 						C, C++,Java, JavaScript, Python, HTML5, CSS3
 					</div>
-					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-3xl text-gray-400">
+					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-2xl text-gray-400 md:text-3xl">
 						Databases:
 					</div>
 					<div className="pb-5 pt-2 text-red-300"> SQL, MySQL, MongoDB</div>
-					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-3xl text-gray-400">
+					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-2xl text-gray-400 md:text-3xl">
 						Frameworks:
 					</div>
 					<div className="pb-5 pt-2 text-red-300">
 						{" "}
 						React JS, Node JS, Express JS
 					</div>
-					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-3xl text-gray-400">
+					<div className="abel-reguler w-fit border-b-2 border-[#ff014f] pb-1 text-2xl text-gray-400 md:text-3xl">
 						Tools & Technologies:
 					</div>
 					<div className="pb-5 pt-2 text-red-300"> Git, Github</div>
 				</div>
-				<div className="w-1/2 text-2xl">
+				<div className="w-full text-lg md:w-1/2 md:text-2xl">
 					<div className="pb-5">
 						I am an undergrad student at Techno Main Salt Lake pursuing btech in
 						the field of Information Technology.I have started my web
