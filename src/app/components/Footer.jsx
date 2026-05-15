@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="abel-regular-thin h-54 mt-24 flex items-center justify-between space-x-2 bg-zinc-900 px-40 py-10 text-xl text-zinc-400">
-			<div className="w-80 space-y-3 px-16 py-2">
+		<div className="abel-regular-thin mt-12 flex flex-col items-center space-y-8 bg-zinc-900 px-5 py-8 text-base text-zinc-400 sm:px-10 md:mt-24 md:flex-row md:items-start md:justify-between md:space-x-4 md:space-y-0 md:px-20 md:py-10 md:text-xl lg:px-40">
+			<div className="w-full space-y-3 px-4 md:w-80 md:px-16 md:py-2">
 				<div className="flex space-x-4">
 					<span className="material-symbols-outlined text-[#ff014f]">call</span>
 					<div>+91-7439455739</div>
@@ -17,7 +17,7 @@ export default function Footer() {
 					<div>+91-7439455739</div>
 				</div>
 			</div>
-			<div className="flex w-80 flex-col items-center">
+			<div className="flex w-full flex-col items-center md:w-80">
 				<div className="text-[#ff014f]">
 					<span className="material-symbols-outlined">home_pin</span>
 				</div>
@@ -26,14 +26,14 @@ export default function Footer() {
 					North 24 Parganas, West Bengal, India
 				</div>
 			</div>
-			<div className="flex w-80 flex-col justify-center space-y-3 px-10 py-5">
+			<div className="flex w-full flex-col justify-center space-y-3 px-4 md:w-80 md:px-10 md:py-5">
 				<div className="flex space-x-4">
 					<a href="https://github.com/prantiranibanda">
 						<i className="fi fi-brands-github text-xl text-[#ff014f]"></i>
 					</a>
 					<a
 						href="https://github.com/prantiranibanda"
-						className="hover:underline"
+						className="hover:underline truncate"
 					>
 						github.com/prantiranibanda
 					</a>
@@ -44,7 +44,7 @@ export default function Footer() {
 					</a>
 					<a
 						href="https://www.linkedin.com/in/prantiranibanda/"
-						className="hover:underline"
+						className="hover:underline truncate"
 					>
 						linkedin.com/in/prantiranibanda
 					</a>
@@ -55,7 +55,7 @@ export default function Footer() {
 					</a>
 					<a
 						href="https://www.instagram.com/prantiranibanda/"
-						className="hover:underline"
+						className="hover:underline truncate"
 					>
 						instagram.com/prantiranibanda
 					</a>
