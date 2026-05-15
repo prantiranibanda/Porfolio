@@ -18,10 +18,10 @@ export default function Contact({ setActive }) {
 		>
 			<div className="heading mb-10 mt-20 md:mb-16 md:mt-44">Contact Me</div>
 			<div className="flex items-center justify-center px-5 sm:px-10 md:px-8 lg:px-80">
-				<div className="grid w-full max-w-4xl grid-cols-1 gap-6 border border-zinc-400 md:grid-cols-2 md:gap-10">
-					<div className="space-y-4 p-6 md:p-10">
+				<div className="grid w-full max-w-4xl grid-cols-1 gap-4 border border-zinc-400 md:grid-cols-2 md:gap-6 lg:gap-10">
+					<div className="space-y-4 p-4 md:p-6 lg:p-10">
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f] md:text-2xl">
+							<div className="abel-regular-thin py-1 text-lg text-[#ff014f] md:text-xl lg:text-2xl">
 								Your Name :
 							</div>
 							<input
@@ -33,7 +33,7 @@ export default function Contact({ setActive }) {
 							/>
 						</div>
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f] md:text-2xl">
+							<div className="abel-regular-thin py-1 text-lg text-[#ff014f] md:text-xl lg:text-2xl">
 								Email Address :
 							</div>
 							<input
@@ -45,7 +45,7 @@ export default function Contact({ setActive }) {
 							/>
 						</div>
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f] md:text-2xl">
+							<div className="abel-regular-thin py-1 text-lg text-[#ff014f] md:text-xl lg:text-2xl">
 								Mobile No :
 							</div>
 							<input
@@ -58,9 +58,9 @@ export default function Contact({ setActive }) {
 						</div>
 					</div>
 
-					<div className="flex flex-col justify-between space-y-4 p-6 text-white md:space-y-0 md:p-10">
+					<div className="flex flex-col justify-between space-y-4 p-4 text-white md:space-y-0 md:p-6 lg:p-10">
 						<div>
-							<div className="abel-regular-thin py-1 text-xl text-[#ff014f] md:text-2xl">
+							<div className="abel-regular-thin py-1 text-lg text-[#ff014f] md:text-xl lg:text-2xl">
 								Message :
 							</div>
 							<textarea
