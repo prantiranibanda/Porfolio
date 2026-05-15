@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="abel-regular-thin mt-12 flex flex-col items-center space-y-8 bg-zinc-900 px-5 py-8 text-base text-zinc-400 sm:px-10 md:mt-24 md:flex-row md:items-start md:justify-between md:space-x-4 md:space-y-0 md:px-20 md:py-10 md:text-xl lg:px-40">
+		<div className="abel-regular-thin mt-12 flex flex-col items-center space-y-8 bg-zinc-900 px-5 py-8 text-base text-zinc-400 sm:px-10 md:mt-24 md:flex-row md:items-start md:justify-between md:space-x-4 md:space-y-0 md:px-8 md:py-10 md:text-xl lg:px-20 xl:px-40">
 			<div className="w-full space-y-3 px-4 md:w-80 md:px-16 md:py-2">
 				<div className="flex space-x-4">
 					<span className="material-symbols-outlined text-[#ff014f]">call</span>

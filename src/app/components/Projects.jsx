@@ -14,7 +14,7 @@ const Projects = ({ setActive }) => {
 			id="projects"
 		>
 			<div className="heading mb-10 mt-20 md:mb-16 md:mt-44">Projects</div>
-			<div className="space-y-8 px-5 text-white sm:px-10 md:space-y-16 md:px-20 lg:px-52">
+			<div className="space-y-8 px-5 text-white sm:px-10 md:space-y-16 md:px-8 lg:px-52">
 				<div className="flex flex-col items-center space-y-6 rounded-[4px] bg-zinc-800 p-6 md:flex-row md:space-x-10 md:space-y-0 md:p-8">
 					<Image
 						src={JJ}

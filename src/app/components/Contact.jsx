@@ -17,7 +17,7 @@ export default function Contact({ setActive }) {
 			id="contact"
 		>
 			<div className="heading mb-10 mt-20 md:mb-16 md:mt-44">Contact Me</div>
-			<div className="flex items-center justify-center px-5 sm:px-10 md:px-20 lg:px-80">
+			<div className="flex items-center justify-center px-5 sm:px-10 md:px-8 lg:px-80">
 				<div className="grid w-full max-w-4xl grid-cols-1 gap-6 border border-zinc-400 md:grid-cols-2 md:gap-10">
 					<div className="space-y-4 p-6 md:p-10">
 						<div>
@@ -25,7 +25,7 @@ export default function Contact({ setActive }) {
 								Your Name :
 							</div>
 							<input
-								className="w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:w-72 md:w-80"
+								className="w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:w-72 lg:w-80"
 								placeholder="name"
 								type="text"
 								value={name}
@@ -37,7 +37,7 @@ export default function Contact({ setActive }) {
 								Email Address :
 							</div>
 							<input
-								className="w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:w-72 md:w-80"
+								className="w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:w-72 lg:w-80"
 								placeholder="email"
 								type="text"
 								value={email}
@@ -49,7 +49,7 @@ export default function Contact({ setActive }) {
 								Mobile No :
 							</div>
 							<input
-								className="w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:w-72 md:w-80"
+								className="w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white sm:w-72 lg:w-80"
 								placeholder="mobile no"
 								type="text"
 								value={phone}
@@ -64,7 +64,7 @@ export default function Contact({ setActive }) {
 								Message :
 							</div>
 							<textarea
-								className="h-40 w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white md:w-[20rem]"
+								className="h-40 w-full rounded-[4px] border border-gray-700 bg-gradient-to-r from-[#000000] to-[#1e1d1d] p-3 text-sm font-light text-white lg:w-[20rem]"
 								placeholder="message me..."
 								type="text"
 								value={mssg}
