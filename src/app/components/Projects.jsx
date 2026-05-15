@@ -13,22 +13,22 @@ const Projects = ({ setActive }) => {
 			}}
 			id="projects"
 		>
-			<div className="heading mb-16 mt-44">Projects</div>
-			<div className="space-y-16 px-52 text-white">
-				<div className="flex space-x-10 rounded-[4px] bg-zinc-800 p-8">
+			<div className="heading mb-10 mt-20 md:mb-16 md:mt-44">Projects</div>
+			<div className="space-y-8 px-5 text-white sm:px-10 md:space-y-16 md:px-20 lg:px-52">
+				<div className="flex flex-col items-center space-y-6 rounded-[4px] bg-zinc-800 p-6 md:flex-row md:space-x-10 md:space-y-0 md:p-8">
 					<Image
 						src={JJ}
 						alt="jj"
 						width={400}
 						height={400}
-						className="rounded-[4px] bg-zinc-900 p-3"
+						className="w-full max-w-[400px] rounded-[4px] bg-zinc-900 p-3"
 					/>
 					<div className="flex flex-col justify-center">
-						<div className="abel-regular pb-4 text-5xl text-zinc-500">
+						<div className="abel-regular pb-4 text-3xl text-zinc-500 sm:text-4xl md:text-5xl">
 							Joy-Junction
 						</div>
-						<div className="pr-8 text-justify text-lg font-light">
-							<span className="abel-regular-thin text-3xl text-zinc-400">
+						<div className="text-justify text-base font-light sm:text-lg">
+							<span className="abel-regular-thin text-xl text-zinc-400 sm:text-2xl md:text-3xl">
 								A simple webgame
 							</span>
 							<br />I created a webapp where you can play games like tic-tac-toe
@@ -76,13 +76,13 @@ const Projects = ({ setActive }) => {
 						</div>
 					</div>
 				</div>
-				<div className="flex space-x-10 rounded-[4px] bg-zinc-800 p-8">
-					<div className="flex flex-col justify-center pl-8">
-						<di className="abel-regular pb-4 text-5xl text-zinc-500">
+				<div className="flex flex-col items-center space-y-6 rounded-[4px] bg-zinc-800 p-6 md:flex-row md:space-x-10 md:space-y-0 md:p-8">
+					<div className="flex flex-col justify-center md:pl-8">
+						<di className="abel-regular pb-4 text-3xl text-zinc-500 sm:text-4xl md:text-5xl">
 							Notebook
 						</di>
-						<div className="text-justify text-lg font-light">
-							<span className="abel-regular-thin text-3xl text-zinc-400">
+						<div className="text-justify text-base font-light sm:text-lg">
+							<span className="abel-regular-thin text-xl text-zinc-400 sm:text-2xl md:text-3xl">
 								A note-taking app
 							</span>
 							<br /> It is a webapp for taking notes with multiuser support,
@@ -134,23 +134,23 @@ const Projects = ({ setActive }) => {
 						alt="note"
 						width={400}
 						height={400}
-						className="rounded-[4px] bg-zinc-900 p-3"
+						className="w-full max-w-[400px] rounded-[4px] bg-zinc-900 p-3"
 					/>
 				</div>
-				<div className="flex space-x-10 rounded-[4px] bg-zinc-800 p-8">
+				<div className="flex flex-col items-center space-y-6 rounded-[4px] bg-zinc-800 p-6 md:flex-row md:space-x-10 md:space-y-0 md:p-8">
 					<Image
 						src={Cb}
 						alt="cb"
 						width={400}
 						height={400}
-						className="rounded-[4px] bg-zinc-950 p-3"
+						className="w-full max-w-[400px] rounded-[4px] bg-zinc-950 p-3"
 					/>
-					<div className="flex flex-col py-5 justify-center">
-						<div className="abel-regular pb-4 text-5xl text-zinc-500">
+					<div className="flex flex-col justify-center py-5">
+						<div className="abel-regular pb-4 text-3xl text-zinc-500 sm:text-4xl md:text-5xl">
 							CodeBuddy
 						</div>
-						<div className="pr-8 text-justify text-lg font-light">
-							<span className="abel-regular-thin text-3xl text-zinc-400">
+						<div className="text-justify text-base font-light sm:text-lg">
+							<span className="abel-regular-thin text-xl text-zinc-400 sm:text-2xl md:text-3xl">
 								A platform for smart revisions for coders
 							</span>
 							<br />
