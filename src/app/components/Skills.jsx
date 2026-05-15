@@ -26,67 +26,68 @@ const Skills = ({ setActive }) => {
 			}}
 			id="skills"
 		>
-			<div className="heading mb-16 mt-44">My Technical Skills</div>
-			<div className="space-y-10 px-72">
-				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-5 shadow-lg shadow-zinc-700/40">
-					<div className="abel-regular-thin border-b border-gray-500 p-5 text-3xl text-[#ff014f]">
+			<div className="heading mb-10 mt-20 md:mb-16 md:mt-44">My Technical Skills</div>
+			<div className="space-y-6 px-5 sm:px-10 md:space-y-10 md:px-20 lg:px-72">
+				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-3 py-3 shadow-lg shadow-zinc-700/40 sm:px-5 md:py-5">
+					<div className="abel-regular-thin border-b border-gray-500 p-4 text-xl text-[#ff014f] sm:p-5 sm:text-2xl md:text-3xl">
 						Languages and Stylesheet
 					</div>
-					<div className="flex items-center space-x-20 p-10">
-						<COriginal className="text-7xl" />
-						<CplusplusOriginal className="text-7xl" />
-						<JavaOriginal className="text-7xl" />
-						<JavascriptOriginal className="text-[4rem]" />
-						<Html5Original className="text-7xl" />
-						<Css3Original className="text-7xl" />
+					<div className="flex flex-wrap items-center justify-center gap-4 p-5 sm:gap-6 sm:p-8 md:p-10 lg:gap-0 lg:space-x-20">
+						<COriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<CplusplusOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<JavaOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<JavascriptOriginal className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem]" />
+						<Html5Original className="text-5xl sm:text-6xl lg:text-7xl" />
+						<Css3Original className="text-5xl sm:text-6xl lg:text-7xl" />
 					</div>
 				</div>
-				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-5 shadow-lg shadow-zinc-700/40">
-					<div className="abel-regular-thin border-b border-gray-500 p-5 text-3xl text-[#ff014f]">
+				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-3 py-3 shadow-lg shadow-zinc-700/40 sm:px-5 md:py-5">
+					<div className="abel-regular-thin border-b border-gray-500 p-4 text-xl text-[#ff014f] sm:p-5 sm:text-2xl md:text-3xl">
 						Frameworks, Runtime Environment and Databases
 					</div>
-					<div className="flex items-center space-x-20 p-10">
-						<ReactOriginal className="text-7xl" />
-						<NextjsOriginal className="text-7xl" />
-						<TailwindcssPlain className="text-7xl" />
+					<div className="flex flex-wrap items-center justify-center gap-4 p-5 sm:gap-6 sm:p-8 md:p-10 lg:gap-0 lg:space-x-20">
+						<ReactOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<NextjsOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<TailwindcssPlain className="text-5xl sm:text-6xl lg:text-7xl" />
 						<Image
 							alt="nodejs"
 							width={70}
 							height={70}
 							src="https://devicon-website.vercel.app/api/nodejs/original.svg"
+							className="w-12 sm:w-14 lg:w-[70px]"
 						></Image>
-						<MysqlOriginal className="text-7xl" />
-						<MongodbOriginal className="text-7xl" />
+						<MysqlOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<MongodbOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
 					</div>
 				</div>
-				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-5 shadow-lg shadow-zinc-700/40">
-					<div className="abel-regular-thin border-b border-gray-500 p-5 text-3xl text-[#ff014f]">
+				<div className="rounded-[5px] border border-gray-600 bg-gradient-to-tr from-[#000000] via-[#1e1d1d] to-[#000000] px-3 py-3 shadow-lg shadow-zinc-700/40 sm:px-5 md:py-5">
+					<div className="abel-regular-thin border-b border-gray-500 p-4 text-xl text-[#ff014f] sm:p-5 sm:text-2xl md:text-3xl">
 						Other Tools and Technologies
 					</div>
-					<div className="flex items-center space-x-20 p-10">
-						<GithubOriginal color="#FFFFFF" className="text-7xl" />
-						<GitOriginal className="text-7xl" />
-						<LinuxOriginal className="text-7xl" />
+					<div className="flex flex-wrap items-center justify-center gap-4 p-5 sm:gap-6 sm:p-8 md:p-10 lg:gap-0 lg:space-x-20">
+						<GithubOriginal color="#FFFFFF" className="text-5xl sm:text-6xl lg:text-7xl" />
+						<GitOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
+						<LinuxOriginal className="text-5xl sm:text-6xl lg:text-7xl" />
 						<Image
 							src={ZustandLogo}
 							alt="Zustand"
 							height={512}
 							width={512}
-							className="size-20"
+							className="size-14 sm:size-16 lg:size-20"
 						/>
 						<Image
 							src={ReactQueryLogo}
 							alt="ReactQuery"
 							height={512}
 							width={512}
-							className="size-20"
+							className="size-14 sm:size-16 lg:size-20"
 						/>
 						<Image
 							src={FramerMotion}
 							alt="FramerMotion"
 							height={512}
 							width={512}
-							className="size-14"
+							className="size-10 sm:size-12 lg:size-14"
 						/>
 					</div>
 				</div>
