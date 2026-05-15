@@ -13,7 +13,7 @@ const Navbar = ({ setActive, active }) => {
 
 	const { scrollY } = useScroll();
 	useMotionValueEvent(scrollY, "change", latest => {
-		console.log(latest);
+		if (window.innerWidth < 768) return;
 		const previous = scrollY.getPrevious();
 		if (previous < latest && latest > 150) setIsHidden(true);
 		else setIsHidden(false);
