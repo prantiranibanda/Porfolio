@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactIcon = () => {
 	return (
-		<div className="space-x-8 pt-8 text-white">
+		<div className="space-x-4 pt-8 text-white sm:space-x-6 md:space-x-8">
 			<Link href="https://github.com/prantiranibanda" target="_blank"> 
 				<i className="fi fi-brands-github inline-block text-2xl text-red-300 hover:animate-bounce hover:cursor-pointer hover:text-[#ff014f]"></i>
 			</Link>
