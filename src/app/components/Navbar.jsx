@@ -99,22 +99,55 @@ const Navbar = ({ setActive, active }) => {
 				</Link>
 			</motion.div>
 			{/* Menu */}
-			{/* <div
-				className={`fixed w-full bg-slate-300 ${isExpanded ? "block" : "hidden"} opacity-95 md:hidden`}
+			<div
+				className={`fixed left-0 right-0 z-50 ${isExpanded ? "block" : "hidden"} md:hidden`}
 			>
-				<Link href="/">
+				<Link
+					href="#home"
+					onClick={() => {
+						setActive("#home");
+						setIsExpanded(false);
+					}}
+				>
 					<div className="dropdown">Home</div>
 				</Link>
-				<Link href="/about">
+				<Link
+					href="#about"
+					onClick={() => {
+						setActive("#about");
+						setIsExpanded(false);
+					}}
+				>
 					<div className="dropdown">About</div>
 				</Link>
-				<Link href="/skills">
+				<Link
+					href="#skills"
+					onClick={() => {
+						setActive("#skills");
+						setIsExpanded(false);
+					}}
+				>
 					<div className="dropdown">Skills</div>
 				</Link>
-				<Link href="/contact">
+				<Link
+					href="#projects"
+					onClick={() => {
+						setActive("#projects");
+						setIsExpanded(false);
+					}}
+				>
+					<div className="dropdown">Projects</div>
+				</Link>
+				<Link
+					href="#contact"
+					onClick={() => {
+						setActive("#contact");
+						setIsExpanded(false);
+					}}
+				>
 					<div className="dropdown">Contact</div>
 				</Link>
-			</div> */}
+			</div>
 		</motion.div>
 	);
 };
